@@ -21,6 +21,16 @@ class UserSeeder extends Seeder
             'id_level' => '1',
             'email' => 'administrator@gmail.com',
             'password' => Hash::make('12345678'),
+
+            'name' => 'admin',
+            'id_level' => '2',
+            'email' => 'admin@gmail.com',
+            'password' => Hash::make('12345678'),
+
+            'name' => 'kasir',
+            'id_level' => '3',
+            'email' => 'kasir@gmail.com',
+            'password' => Hash::make('12345678'),
         ]);
 
         // Alternatively, you can use the following code

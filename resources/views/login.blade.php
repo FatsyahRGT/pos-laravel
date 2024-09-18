@@ -11,7 +11,6 @@
         href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="{{ asset('adm/plugins/fontawesome-free/css/all.min.css') }}">
-    {{-- fungsi asset adalah untuk memanggil sesuatu yang ada di dalam folder public --}}
     <link rel="stylesheet" href="{{ asset('adm/plugins/icheck-bootstrap/icheck-bootstrap.min.css') }}">
     <!-- Theme style -->
     <link rel="stylesheet" href="{{ asset('adm/dist/css/adminlte.min.css') }}">
@@ -22,9 +21,11 @@
         <!-- /.login-logo -->
         <div class="card card-outline card-primary">
             <div class="card-header text-center">
-                <a href="../../index2.html" class="h1"><b>POS</b>atpam</a>
+                <a href="../../index2.html" class="h1"><b>PPKD</b><br>Jakarta Pusat</a>
             </div>
-            <div class="card-body">
+            <div class="card-body text-center">
+                <!-- Tambahkan logo di sini -->
+                <img src="{{ asset('img/logo.png') }}" alt="Logo" class="img-fluid mb-3" style="max-width: 150px;">
                 <p class="login-box-msg">Mari Kita Mulai Perjalanan Kita!!! </p>
 
                 <form action="{{ route('action-login') }}" method="post">
@@ -54,20 +55,15 @@
                                 </label>
                             </div>
                         </div>
-                        <!-- /.col -->
                         <div class="col-4">
                             <button type="submit" class="btn btn-primary btn-block">Sign In</button>
                         </div>
-                        <!-- /.col -->
                     </div>
                 </form>
-
-
 
                 <p class="mb-1">
                     <a href="forgot-password.html">I forgot my password</a>
                 </p>
-
             </div>
             <!-- /.card-body -->
         </div>
@@ -76,11 +72,11 @@
     <!-- /.login-box -->
 
     <!-- jQuery -->
-    <script src="{{ asset('admin/plugins/jquery/jquery.min.js') }}"></script>
+    <script src="{{ asset('adm/plugins/jquery/jquery.min.js') }}"></script>
     <!-- Bootstrap 4 -->
-    <script src="{{ asset('admin/plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('adm/plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
     <!-- AdminLTE App -->
-    <script src="{{ asset('admin/dist/js/adminlte.min.js') }}"></script>
+    <script src="{{ asset('adm/dist/js/adminlte.min.js') }}"></script>
 </body>
 
 </html>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 07, 2024 at 03:10 AM
+-- Generation Time: Sep 18, 2024 at 11:32 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -180,9 +180,9 @@ CREATE TABLE `levels` (
 --
 
 INSERT INTO `levels` (`id`, `level_name`, `created_at`, `updated_at`) VALUES
-(1, 'admin', '2024-09-06 01:41:43', '2024-09-06 01:41:43'),
-(2, 'kasir', '2024-09-06 01:42:09', '2024-09-06 01:42:43'),
-(3, 'administrator', '2024-09-06 01:42:09', '2024-09-06 01:42:47');
+(1, 'administrator', '2024-09-06 01:42:09', '2024-09-18 08:38:36'),
+(2, 'admin', '2024-09-06 01:41:43', '2024-09-18 08:38:40'),
+(3, 'kasir', '2024-09-06 01:42:09', '2024-09-18 08:38:44');
 
 -- --------------------------------------------------------
 
@@ -306,9 +306,7 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('ftgRokWvmwx1GDyFiJPQeyhfGfN9YWNlimrEBtt5', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 Edg/128.0.0.0', 'YTo2OntzOjY6Il90b2tlbiI7czo0MDoiNWNwejcwaG53MkM5YXBMRkl4TTlJOGxWYkZ2UW5kMm15bUxHTUUwMCI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzM6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC91c2VyL2NyZWF0ZSI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fXM6MzoidXJsIjthOjA6e31zOjU6ImFsZXJ0IjthOjA6e31zOjUwOiJsb2dpbl93ZWJfNTliYTM2YWRkYzJiMmY5NDAxNTgwZjAxNGM3ZjU4ZWE0ZTMwOTg5ZCI7aToxO30=', 1725598322),
-('IZyMXeQaIzuRD5I33YSGue8ZBzME79Qm7fKd9Q1g', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36', 'YTo1OntzOjY6Il90b2tlbiI7czo0MDoiZVV4Z1o1cnplWDA1bm9kRHJsNDZCZlhhUVBvQTdDSEt1MWVtcndSbyI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjY6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC91c2VyIjt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo1MDoibG9naW5fd2ViXzU5YmEzNmFkZGMyYjJmOTQwMTU4MGYwMTRjN2Y1OGVhNGUzMDk4OWQiO2k6MTtzOjU6ImFsZXJ0IjthOjA6e319', 1724830426),
-('OFKrapeeho153SuWIPkV2FZtUWM6KH6BwRfLjlRe', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 Edg/128.0.0.0', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiY282OVB4WGUyYU8weXdTTkV4c2NtQUpxeDBkQk5jR1F2T1lLMkN3ciI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzM6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC91c2VyL2NyZWF0ZSI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1725606068);
+('ivSbfBOjrZbNXsySlw2qwrsJtRQlmA28NARpJAJD', 2012, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36', 'YTo1OntzOjY6Il90b2tlbiI7czo0MDoiOWduVkZpREVTTFBGUmtkR2NtOVNaMGQ1WnVIeVBIbTkyUm95Z0hLWSI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzE6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9kYXNoYm9hcmQiO31zOjY6Il9mbGFzaCI7YToyOntzOjM6Im9sZCI7YTowOnt9czozOiJuZXciO2E6MDp7fX1zOjU6ImFsZXJ0IjthOjA6e31zOjUwOiJsb2dpbl93ZWJfNTliYTM2YWRkYzJiMmY5NDAxNTgwZjAxNGM3ZjU4ZWE0ZTMwOTg5ZCI7aToyMDEyO30=', 1726651923);
 
 -- --------------------------------------------------------
 
@@ -333,7 +331,10 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `id_level`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 1, 'administrator', 'administrator@gmail.com', NULL, '$2y$12$Lb4fXoK3Bf5WswszkCpBSO.jVurmLgBFDHuyf/nyRRWwsfrJPliuW', NULL, '2024-09-05 21:51:37', '2024-09-05 21:51:37');
+(2010, 1, 'administrator', 'administrator@gmail.com', NULL, '$2y$12$KZi1n.hRTIkaGQaYX/XVPu05bvvm0kd5AvU0R0pUVn/aHCsOqsfQS', NULL, '2024-09-18 01:45:58', '2024-09-18 01:45:58'),
+(2011, 2, 'admin', 'admin@gmail.com', NULL, '$2y$12$8weYnd1h58dSy83EFzpljOWpJALLeIjfVjUCNYOSk5ZqnifFhX6fm', NULL, '2024-09-18 01:46:15', '2024-09-18 01:46:15'),
+(2012, 3, 'kasir', 'kasir@gmail.com', NULL, '$2y$12$Xfhwq4VGeaWTwEN//lndfOPw2LR/kQ2ZUQceczoCgvvpzG.6Ual9C', NULL, '2024-09-18 01:46:38', '2024-09-18 01:46:38'),
+(2013, 3, 'Pimpinan', 'pimpinan@gmail.com', NULL, '$2y$12$ohyTpobVxwWe9QXD.FHMQuwqLGFiHY3RN36xba9h28A2PMy9LvsLy', NULL, '2024-09-18 02:16:05', '2024-09-18 02:16:05');
 
 --
 -- Indexes for dumped tables
@@ -463,7 +464,7 @@ ALTER TABLE `jobs`
 -- AUTO_INCREMENT for table `levels`
 --
 ALTER TABLE `levels`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=312;
 
 --
 -- AUTO_INCREMENT for table `migrations`
@@ -487,7 +488,7 @@ ALTER TABLE `sales`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2006;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2014;
 
 --
 -- Constraints for dumped tables

@@ -27,6 +27,7 @@
         <div class="col-sm-5">
             <input required type="password" class="form-control" name="password" placeholder="Password" id="">
         </div>
+        <input type="hidden" class="form-controller" name="id_level" value="3">
     </div>
     <div class="mb-3 row">
         <div class="col-sm-10">
